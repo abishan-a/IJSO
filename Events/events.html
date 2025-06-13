@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IJSO Guide – Events</title>
+  <link rel="stylesheet" href="events.css" />
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabs = document.querySelectorAll(".tab-bar button");
+      const containers = document.querySelectorAll(".events-container");
+
+      tabs.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+          tabs.forEach(tab => tab.classList.remove("active"));
+          containers.forEach(box => box.classList.remove("active"));
+          btn.classList.add("active");
+          containers[index].classList.add("active");
+        });
+      });
+
+      // Activate first tab by default
+      tabs[0].classList.add("active");
+      containers[0].classList.add("active");
+    });
+  </script>
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+  
+
+  <main>
+    <h2>Events</h2>
+
+    <div class="tab-bar">
+      <button>Past Events</button>
+      <button>Ongoing Events</button>
+      <button>Upcoming Events</button>
+    </div>
+
+    <!-- Past Events -->
+    <div class="events-container">
+      <div class="event-card">
+        <img src="images/website.jpg" alt="Alpha Launch">
+        <div class="event-title">🌐 Alpha Website Launch</div>
+        <div class="event-date">July 1, 2025</div>
+        <div class="event-description">
+          [desc]
+        </div>
+      </div>
+    </div>
+
+    <!-- Ongoing Events -->
+    <div class="events-container">
+      <div class="event-card">
+        <img src="images/podcast-cover.jpg" alt="Podcast">
+        <div class="event-title">🎙️ IJSO Guide Podcast</div>
+        <div class="event-date">Ongoing – Started May 2025</div>
+        <div class="event-description">
+          Tune in as we talk to IJSO medalists, share prep tips, and explore science topics. Available on Spotify, Apple Podcasts, and YouTube.
+        </div>
+        <a href="#" class="event-button" target="_blank">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Upcoming Events -->
+    <div class="events-container">
+      <div class="event-card">
+        <img src="images/website.jpg" alt="Main Launch">
+        <div class="event-title">🚀 Main Website Launch</div>
+        <div class="event-date">September 6, 2025</div>
+        <div class="event-description">
+          [desc]
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </footer>
+
+</body>
+</html>
