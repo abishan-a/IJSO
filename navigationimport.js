@@ -1,3 +1,5 @@
+fetch('navbar.html')
+
 let menuToggle = document.getElementById('menuToggle')
     menuToggle.addEventListener('click', ()=>{
       document.getElementById('menu').classList.toggle('active')
