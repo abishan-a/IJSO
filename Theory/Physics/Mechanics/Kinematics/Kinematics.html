@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kinematic Formulas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <link rel="stylesheet" href="../../theoryPages.css">
+<script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Kinematic Formulas</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <p>Kinematics is the branch of physics that describes the motion of objects without considering the forces that cause the motion. It focuses on displacement, velocity, acceleration, and time in one, two, or three dimensions. For the IJSO, we only consider one or two dimensional kinematics.</p>
+
+    <p>There are 4 equations in kinematics:</p>
+    <ul>
+      <li>\( v = u + at \)</li>
+      <li>\( s = ut + \frac{1}{2}at^2 \)</li>
+      <li>\( v^2 = u^2 + 2as \)</li>
+      <li>\( v_{avg} = \frac{v + u}{2} \)</li>
+    </ul>
+
+    <p>Where:<br>
+    \( u \): initial velocity<br>
+    \( v \): final velocity<br>
+    \( a \): acceleration<br>
+    \( s \): displacement<br>
+    \( t \): time</p>
+
+    <p>Let’s see some examples and you will understand how kinematics work</p>
+
+    <button class="collapsible">Example 1</button>
+    <div class="content">
+      <p>A car starts from rest and accelerates at \( 2 \, \text{ms}^{-2} \) for 5 seconds. Find the final velocity of the car and the distance traveled.</p>
+      <p>Known: \( a = 2\,\text{ms}^{-2}, t = 5\,s, u = 0\,\text{ms}^{-1} \)</p>
+      <p>\( v = u + at = 0 + 2 \times 5 = 10\,\text{ms}^{-1} \)</p>
+      <p>\( s = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2} \times 2 \times 25 = 25\,\text{m} \)</p>
+    </div>
+
+    <button class="collapsible">Example 2</button>
+    <div class="content">
+      <p>A ball is thrown vertically upward with an initial velocity of \( 30\,\text{ms}^{-1} \).</p>
+      <p>\( a = -10\,\text{ms}^{-2}, u = 30\,\text{ms}^{-1}, v = 0 \)</p>
+      <p>\( s = \frac{v^2 - u^2}{2a} = \frac{0 - 900}{-20} = 45\,\text{m} \)</p>
+      <p>\( t = \frac{v - u}{a} = \frac{-30}{-10} = 3\,\text{s} \)</p>
+      <p>Total time of flight = \( 2 \times 3 = 6\,s \)</p>
+    </div>
+
+    <button class="collapsible">Example 3</button>
+    <div class="content">
+      <p>A cyclist moving at 5 m/s starts accelerating at 1 m/s² for 10 seconds, then decelerates at 0.5 m/s² until coming to rest. Find the total distance and total time.</p>
+      <p>\( s_1 = ut + \frac{1}{2}at^2 = 5 \times 10 + \frac{1}{2} \times 1 \times 100 = 100\,\text{m} \)</p>
+      <p>\( v = u + at = 5 + 10 = 15\,\text{ms}^{-1} \)</p>
+      <p>\( s_2 = \frac{-v^2}{2a} = \frac{-225}{-1} = 225\,\text{m} \)</p>
+      <p>\( t = \frac{-v}{a} = \frac{-15}{-0.5} = 30\,s \)</p>
+      <p>Total distance = \( 100 + 225 = 325\,\text{m} \), total time = \( 10 + 30 = 40\,s \)</p>
+    </div>
+
+    <button class="collapsible">Example 4</button>
+    <div class="content">
+      <p>A ball is launched with \( 20\,\text{ms}^{-1} \) at \( 45^\circ \). Find the range, max height, and total flight time.</p>
+      <p>\( v_x = 20 \cos(45) = 14.14\,\text{ms}^{-1} \), \( v_y = 20 \sin(45) = 14.14\,\text{ms}^{-1} \)</p>
+      <p>\( s = \frac{-v_y^2}{2a} = \frac{-200}{-19.6} = 10.2\,\text{m} \)</p>
+      <p>\( t = \frac{-v_y}{a} = \frac{-14.14}{-9.8} = 1.44\,s \), total = \( 2.88\,s \)</p>
+      <p>\( x = v_x \cdot t = 14.14 \times 2.88 = 40.72\,\text{m} \)</p>
+    </div>
+
+    <br>
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+  <script src="../../../collapsibles.js"></script>
+</body>
+</html>

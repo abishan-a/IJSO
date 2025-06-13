@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mechanisms of Heat Transfer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="../../theoryPages.css">
+<script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Mechanisms of Heat Transfer</h2>
+    <a href="../Thermo.html" class="back-btn">← Back to Thermodynamics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <p>Heat transfer occurs through three primary mechanisms: conduction, convection, and radiation. Each plays a crucial role in the movement of thermal energy in different situations.</p>
+
+    <h2>Conduction</h2>
+    <ul>
+      <li>Conduction is the transfer of heat through direct contact between molecules.</li>
+      <li>It occurs mainly in solids (especially metals) because their atoms are closely packed.</li>
+      <li>The rate of conduction depends on the thermal conductivity of the material.</li>
+      <li>Formula:<br>
+      \[
+      Q = \frac{kA \Delta T}{d}
+      \]</li>
+      <li>Example: A metal spoon gets hot when placed in a boiling pot.</li>
+    </ul>
+
+    <h2>Convection</h2>
+    <ul>
+      <li>Convection is the transfer of heat in fluids (liquids and gases) due to motion of the fluid itself.</li>
+      <li>It happens because warmer fluids expand, become less dense, and rise, while cooler fluids sink.</li>
+      <li>Two types:
+        <ol>
+          <li><strong>Natural Convection:</strong> Occurs due to density differences (e.g., warm air rising).</li>
+          <li><strong>Forced Convection:</strong> Occurs when an external force moves the fluid (e.g., a fan or pump).</li>
+        </ol>
+      </li>
+      <li>Formula:<br>
+      \[
+      Q = hA \Delta T
+      \]</li>
+      <li>Example: Hot air rising above a candle flame.</li>
+    </ul>
+
+    <h2>Radiation</h2>
+    <ul>
+      <li>Radiation is the transfer of heat via electromagnetic waves without needing a medium.</li>
+      <li>All objects emit radiation based on their temperature.</li>
+      <li>The amount of radiation emitted follows the Stefan-Boltzmann Law:<br>
+      \[
+      P = \sigma A T^4
+      \]</li>
+      <li>Example: The Sun heating the Earth.</li>
+    </ul>
+
+    <p>These three modes often work together. For example, a hot cup of coffee conducts heat through the cup, convects heat to the surrounding air, and radiates heat as infrared waves.</p>
+
+    <button class="collapsible">Example 1 : Rate of Heat Transfer</button>
+    <div class="content">
+      <p>A metal rod of length 1.5 m and cross-sectional area 2 cm² has one end maintained at 100°C and the other at 30°C. The thermal conductivity of the metal is 200 W/m·K. Find the rate of heat transfer through the rod.</p>
+      <p>Convert units:</p>
+      <p>\(A = 2 \times 10^{-4} \, \text{m}^2, \quad \Delta T = 70^\circ C, \quad d = 1.5 \, \text{m}\)</p>
+      <p>\(Q = \frac{200 \times 2 \times 10^{-4} \times 70}{1.5} = 1.87 \, \text{W}\)</p>
+    </div>
+
+    <button class="collapsible">Example 2 : Peak Wavelength of Radiation</button>
+    <div class="content">
+      <p>If the Sun’s surface temperature is 5800 K and it emits radiation like a black body, what is the peak wavelength of its radiation?</p>
+      <p>Using Wien’s law:</p>
+      <p>\(\lambda_{\text{max}} T = 2.9 \times 10^{-3} \, \text{m·K}\Rightarrow \lambda_{\text{max}} = \frac{2.9 \times 10^{-3}}{5800} = 500 \, \text{nm}\)</p>
+    </div>
+
+    <br>
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+  <script src="../../../collapsibles.js"></script>
+
+</body>
+</html>

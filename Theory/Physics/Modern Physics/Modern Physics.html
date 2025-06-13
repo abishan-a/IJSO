@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modern Physics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Modern Physics</h1>
+    <p>Explore quantum mechanics, relativity, and nuclear physics. Discover the revolutionary concepts that transformed our understanding of the universe at both the smallest and largest scales.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Modern Physics</h2>
+    <a class="back-btn" href="../physics.html">← Back to Physics</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <!-- Structure of the Particles and the Atoms -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Structure of the Particles and the Atoms<span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Understand the subatomic particles that make up atoms and how they determine identity and charge.</p>
+        <br>
+        <a class="learn-btn" href="Structure of Atoms/structureofatoms.html">Learn More →</a>
+      </div>
+    </div>
+
+    <!-- Bohr Model of the Atom -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Different Models of the Atom<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn about different models of the atom.</p>
+          <br>
+          <a class="learn-btn" href="Bohr Model/bohrmodel.html">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Types of Radioactive Decay -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Types of Radioactive Decay<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Study how unstable nuclei emit particles or energy to become stable.</p>
+          <br>
+          <a class="learn-btn" href="Radioactive Decay/radioactivedecay.html">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Properties of Radiation -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Properties of Radiation<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Compare penetration power, ionization, and effects of alpha, beta, and gamma radiation.</p>
+          <br>
+          <a class="learn-btn" href="Properties of Radiation/radiationproperties.html">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Half-life and Radioactive Decay Law -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Half-life and Radioactive Decay Law<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Explore how radioactive substances decay over time at predictable rates.</p>
+          <br>
+          <a class="learn-btn" href="Decay Law/decay_law.html">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Nuclear Fission and Fusion -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Nuclear Fission and Fusion<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Learn how nuclei split or combine, releasing massive amounts of energy.</p>
+          <br>
+          <a class="learn-btn" href="Fission and Fusion/fission_fusion.html">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Wave - Particle Duality -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Wave - Particle Duality<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Discover how light and matter exhibit both wave-like and particle-like behavior.</p>
+          <br>
+          <a class="learn-btn" href="Wave-Particle Duality/wave-particle_duality.html">Learn More →</a>
+        </div>
+      </div>
+
+     <!-- Photoelectric Effect -->
+    <div class="card" onclick="toggleCard(this)">
+        <div class="card-header">
+            Photoelectric Effect<span class="arrow">→</span>
+        </div>
+        <div class="card-content">
+          <p>Understand how light can eject electrons from metals, supporting quantum theory.</p>
+          <br>
+          <a class="learn-btn" href="Photoelectric Effect/photoelectric_effect.html">Learn More →</a>
+        </div>
+      </div>
+
+     
+
+
+    <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">🎯</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style modern physics practice questions?</h4>
+    <p>Apply your knowledge with our collection of IJSO-style modern physics problems.</p>
+    <a href="../../../Practice Questions/Physics/Modern Physics/Modern Physics.html">View Modern Physics Practice Questions</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style modern physics mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in modern physics, designed to test your problem-solving skills and understanding.</p>
+    <a href="../../../Mock Tests/Physics/Modern Physics/Modern Physics.html">View Modern Physics Mock Tests</a>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Center of Mass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+<link rel="stylesheet" href="../../theoryPages.css">
+
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Center of Mass</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <h2>Center of Mass</h2>
+    <p>The center of mass of an object is the point where its mass is evenly distributed in all directions. It is the effective point where the entire mass of an object can be considered to act when analyzing motion and forces.</p>
+
+    <h2>Finding the Center of Mass</h2>
+    <h3>1. For Symmetrical Objects</h3>
+    <ul>
+      <li>If the object has uniform density (e.g., a sphere, cube, or cylinder), the center of mass is at its geometric center.</li>
+    </ul>
+    <img src="image1.png" alt="Example 1 Image">
+
+    <h3>2. The Mathematical Method For Irregular Objects</h3>
+    <p>The center of mass can be calculated using:</p>
+    <p>\[
+    x_{CM} = \frac{m_1x_1 + m_2x_2 + m_3x_3 + \dots + m_nx_n}{m_1 + m_2 + m_3 + \dots + m_n}
+    \]</p>
+    <ul>
+      <li>\( x_i \) are the positions of small mass elements</li>
+      <li>\( m_i \) are the masses of those elements</li>
+    </ul>
+
+    <h3>3. The Experimental Method For Irregular Objects</h3>
+    <ul>
+      <li>Hang the object from two positions and in each case, mark the vertical line. The point where the two lines meet is the center of mass.</li>
+    </ul>
+    <img src="image2.png" alt="Example 1 Image">
+
+    <h2>Properties of Center of Mass</h2>
+    <ul>
+      <li>If no external force acts on an object, its center of mass moves with constant velocity (Newton’s First Law).</li>
+      <li>The motion of an object can be analyzed as the motion of the center of mass plus rotation around it.</li>
+      <li>In collisions, the center of mass follows the conservation of momentum.</li>
+    </ul>
+    <!-- Velocity of Center of Mass Section -->
+<h2>Velocity of Center of Mass</h2>
+<p>The velocity of the center of mass of a system of particles is defined as the mass-weighted average of the individual velocities of all particles in the system. It tells you how fast and in what direction the system as a whole is moving.</p>
+<p>Mathematically, for a system of particles:</p>
+<p>\[\vec{v}_{\text{cm}} = \frac{1}{M} \sum_{i=1}^{n} m_i \vec{v}_i\]</p>
+<p>If no external force acts on the system, the velocity of the center of mass remains constant due to conservation of linear momentum.</p>
+
+    <h2>Applications of Center of Mass</h2>
+    <ul>
+      <li><strong>Stability:</strong> A lower center of mass increases stability (e.g., sports cars vs. trucks).</li>
+      <li><strong>Projectile Motion:</strong> A thrown object rotates around its center of mass.</li>
+      <li><strong>Astronomy:</strong> The Earth-Moon system has a common center of mass, which both bodies orbit.</li>
+    </ul>
+
+    <p>You will understand this better when you see some examples.</p>
+
+    <button class="collapsible">Example 1</button>
+    <div class="content">
+      <p>A uniform rod of length L = 2 m and mass M = 5 kg is placed on a table. Where is its center of mass?</p>
+      <p>The center of mass of a uniform rod lies in its center. So, the center of mass lies in 1m.</p>
+    </div>
+
+    <button class="collapsible">Example 2</button>
+    <div class="content">
+      <p>An uniform isosceles triangular plate has a base of 6 cm and a height of 8 cm. Where is its center of mass relative to the base?</p>
+      <p>\[
+      y_{cm} = \frac{h}{3} = \frac{8}{3} = 2.67 \text{ cm}, \quad
+      x_{cm} = \frac{b}{2} = \frac{6}{2} = 3 \text{ cm}
+      \]</p>
+    </div>
+
+    <button class="collapsible">Example 3</button>
+    <div class="content">
+      <p>A 5 kg object moving at 10 m/s collides with a 10 kg object at rest. After the collision, they stick together. Find their velocity after the collision using the concept of center of mass motion.</p>
+      <p>Since the two masses stick together, final velocity equals the velocity of the center of mass:</p>
+      <p>\[
+      V_{COM} = \frac{5 \times 10 + 10 \times 0}{5 + 10} = \frac{50}{15} = 3.33 \text{ m/s}
+      \]</p>
+    </div>
+
+    
+<br>
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+  <script src="../../../collapsibles.js"></script>
+</body>
+</html>

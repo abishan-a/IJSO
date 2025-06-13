@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bernoulli's Principle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+ <link rel="stylesheet" href="../../theoryPages.css">
+ <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header with Back Button -->
+  <div class="page-header">
+    <h2>Bernoulli’s Principle</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <p>Bernoulli’s Principle states that for an incompressible, non-viscous fluid in steady flow, the total mechanical energy per unit volume remains constant. This means as the speed of the fluid increases, the pressure decreases, and vice versa.</p>
+
+    <p>Mathematically, it is denoted as:</p>
+    <p>\[ P + \frac{1}{2} \rho v^2 + \rho g h = k \]</p>
+
+    <ul>
+      <li>\(P\): Pressure</li>
+      <li>\(\rho\): Fluid density</li>
+      <li>\(v\): Fluid velocity</li>
+      <li>\(g\): Acceleration due to gravity</li>
+      <li>\(h\): Height above reference level</li>
+    </ul>
+
+    <p>Each term represents:</p>
+    <ul>
+      <li>\(P\): Pressure energy</li>
+      <li>\(\frac{1}{2} \rho v^2\): Kinetic energy per unit volume</li>
+      <li>\(\rho g h\): Gravitational potential energy per unit volume</li>
+    </ul>
+
+    <h2>Conditions for Validity</h2>
+    <ul>
+      <li>Incompressible fluid (density remains constant)</li>
+      <li>Non-viscous (no internal friction)</li>
+      <li>Steady flow (velocity at each point doesn’t change with time)</li>
+      <li>Along a streamline</li>
+    </ul>
+
+    <h2>Continuity Equation</h2>
+    <p>The continuity equation states that the mass flow rate of a fluid remains constant throughout a streamline. This is expressed as:</p>
+    <p>\[ A_1 v_1 = A_2 v_2 \]</p>
+    <p>Where \(A\) is the cross-sectional area and \(v\) is the fluid velocity at that section.</p>
+
+  
+    <button class="collapsible">Example 1: Water Flow through Pipe</button>
+    <div class="content">
+      <p>Water flows through a pipe narrowing from a diameter of 10 cm to 5 cm. If the speed in the wider section is 2 m/s, what is the speed in the narrower section?</p>
+      <p>\[ A_1 v_1 = A_2 v_2 \Rightarrow \pi r_1^2 v_1 = \pi r_2^2 v_2 \]</p>
+      <p>\[ v_2 = \frac{r_1^2}{r_2^2} v_1 = \left(\frac{0.05^2}{0.025^2}\right) \cdot 2 = 8\, \text{m/s} \]</p>
+    </div>
+
+    <button class="collapsible">Example 2: Applying Bernoulli’s Equation</button>
+    <div class="content">
+      <p>Water enters a pipe at a speed of 2 m/s and pressure of 200 kPa. At a higher point, the pipe narrows, and the velocity increases to 5 m/s. Assuming height difference of 3 m, find the pressure at the higher point.</p>
+      <p>Use: \( P_1 + \frac{1}{2} \rho v_1^2 + \rho g h_1 = P_2 + \frac{1}{2} \rho v_2^2 + \rho g h_2 \)</p>
+      <p>\(P_2 = P_1 + \frac{1}{2} \rho (v_1^2 - v_2^2) + \rho g(h_1 - h_2)\)</p>
+      <p>Substitute values : \(P_1 = 200\, \text{kPa},\: \rho = 1000\:\text{kg} \text{m}^{-3},\: v_1 = 2\, \text{ms}^{-1},\: v_2 = 5\, \text{ms}^{-1}, \: (h_1 - h_2) = -3m \)</p>
+      <p>\(P_2 = 160,100\:Pa\)</p>
+    </div>
+
+   <br>
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+  <script src="../../../collapsibles.js"></script>
+</body>
+</html>

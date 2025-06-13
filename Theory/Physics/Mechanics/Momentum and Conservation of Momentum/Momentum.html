@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Momentum and Conservation of Momentum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <link rel="stylesheet" href="../../theoryPages.css">
+<script src="/navigationimport.js" defer></script>
+ 
+</head>
+<body>
+
+
+  <!-- Page header row -->
+  <div class="page-header">
+    <h2>Momentum and Conservation of Momentum</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>What is Momentum?</h2>
+    <p>Momentum is a property of moving objects. It is a measure of how hard it is to stop a moving object. It depends on both the mass and the velocity of the object.</p>
+    <p>The formula for momentum \(p\) is: \( p = mv \)</p>
+
+    <h2>Impulse</h2>
+    <p>Impulse is the change in momentum of an object when a force is applied over a period of time. It is equal to the force multiplied by the time it acts for.</p>
+    <p>\( \text{Impulse} = F \cdot t = \Delta p \)</p>
+    <h3 style="font-size: 1.4rem; margin-top: 2rem; margin-bottom: 1rem; border-left: 5px solid #90caf9; padding-left: 10px; background-color: #f1f8ff; border-radius: 4px;">
+  Derivation from Newton's 2nd Law (Using Δ Quantities)
+</h3>
+
+<p>We start with Newton’s second law:</p>
+<p>\[ F = m \cdot a \]</p>
+
+<p>Since acceleration is the change in velocity over time:</p>
+<p>\[ F = m \cdot \frac{\Delta v}{\Delta t} \]</p>
+
+<p>Multiplying the numerator:</p>
+<p>\[ F = \frac{m \cdot \Delta v}{\Delta t} \]</p>
+
+<p>Recognizing that momentum \( p = mv \), we substitute:</p>
+<p>\[ F = \frac{\Delta p}{\Delta t} \]</p>
+
+<p>Finally, multiplying both sides by \( \Delta t \):</p>
+<p>\[ F \cdot \Delta t = \Delta p \]</p>
+
+<p>This shows that <strong>Impulse = Change in Momentum</strong>.</p>
+
+
+    <h2>Law of Conservation of Momentum</h2>
+    <p>The total momentum of a closed system is conserved, meaning it does not change unless acted on by an external force.</p>
+    <p>In a collision between two objects: <br>
+    \( m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2 \)</p>
+    <p>Where: <br>
+    \( m_1, m_2 \) = masses of the two objects <br>
+    \( u_1, u_2 \) = initial velocities <br>
+    \( v_1, v_2 \) = final velocities</p>
+
+    <button class="collapsible">Example: Two carts collision</button>
+    <div class="content">
+      <p>Cart A of mass 2kg is moving at 3 m/s. Cart B of mass 1kg is stationary. They collide and stick together. What is their common velocity after the collision?</p>
+      <ul>
+        <li>Initial momentum: \( p = 2 \cdot 3 + 1 \cdot 0 = 6 \, \text{kg m/s} \)</li>
+        <li>Total mass after collision: \(2 + 1 = 3 \, \text{kg}\)</li>
+        <li>Final velocity: \( v = \frac{6}{3} = 2 \, \text{m/s} \)</li>
+      </ul>
+    </div>
+
+    <h2>Elastic vs Inelastic Collisions</h2>
+    <ul>
+      <li><strong>Elastic collision:</strong> Both momentum and kinetic energy are conserved.</li>
+      <li><strong>Inelastic collision:</strong> Only momentum is conserved. Kinetic energy is not.</li>
+    </ul>
+
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Pavle Ignjatovic</strong>
+</p>   
+  </div>
+
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+  <script src="../../../collapsibles.js"></script>
+</body>
+</html>

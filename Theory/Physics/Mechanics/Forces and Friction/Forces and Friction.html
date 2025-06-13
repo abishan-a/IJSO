@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forces and Friction</title>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+<link rel="stylesheet" href="../../theoryPages.css">
+   <script src="/navigationimport.js" defer></script>   
+
+  
+</head>
+<body>
+
+  
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h2>Forces and Friction</h2>
+    <a class="back-btn" href="../Mechanics.html">← Back to Mechanics</a>
+  </div>
+
+  <!-- Original Content Container -->
+    <div class="container">
+  
+      <h2>What is a Force?</h2>
+      <p>A <strong>force</strong> is a push or pull on an object due to an interaction. It can cause an object to accelerate, slow down, remain in place, or change direction.</p>
+      <p>The SI unit of force is Newton (N), named after Sir Isaac Newton, the guy who basically laid down the law(s) — three of them, to be exact.</p>
+  
+      <h2>Types of Forces</h2>
+      <ul>
+        <li><strong>Gravitational Force</strong> — Pull due to gravity.</li>
+        <li><strong>Normal Force</strong> — Perpendicular contact force from a surface.</li>
+        <li><strong>Tension Force</strong> — Force transmitted through a string, rope, etc.</li>
+        <li><strong>Frictional Force</strong> — Force resisting relative motion.</li>
+        <li><strong>Applied Force</strong> — Force applied by a person or another object.</li>
+      </ul>
+  
+      <h2>Important Equations</h2>
+      <ul>
+        <li>Newton’s Second Law: \( F = ma \)</li>
+        <li>Weight: \( W = mg \)</li>
+        <li>Net Force: \( F_{\text{net}} = \sum F = ma \)</li>
+      </ul>
+  
+      <button class="collapsible">Example 1: Resultant Force</button>
+      <div class="content">
+          <p>A 3N force acts on a block to the left direction and another 5N force acts on a block to the right direction. What is its resultant force?</p>
+          <img src="image1.png" alt="Force diagram" style="max-width: 100%; border-radius: 8px; margin: 15px 0;" />
+          <ul>
+          <li>Resultant Force = \(5N - 3N\)</li>
+          <li><strong>Resultant Force</strong> = \(2N\)</li>
+        </ul>
+      </div>
+  
+      <button class="collapsible">Example 2: Finding the Acceleration</button>
+      <div class="content">
+          <p>A girl applies a 10N force to a 5kg block. Find the acceleration</p>
+          <ul>
+              <li>\(F = ma\)</li>
+              <li>\(a = \frac{F}{m}\)</li>
+              <li>\(a = \frac{10 \,N}{5 \,kg} = 2 \:ms^{-2}\)</li>
+              <li><strong>Acceleration</strong> = \(2\:ms^{-2}\)</li>
+          </ul>
+      </div>
+  
+      <button class="collapsible">Example 3: Finding the Mass</button>
+      <div class="content">
+          <p>A boy applies a 20N force to a body with unknown mass. Its acceleration is found to be \(4\:ms^{-2}\)</p>
+          <ul>
+              <li>\(F = ma\)</li>
+              <li>\(m = \frac{F}{a}\)</li>
+              <li>\(m = \frac{20\,N}{4\,ms^{-2}} = 5 \:kg \)</li>
+              <li><strong>Mass</strong> = \(5\:kg\)</li>
+          </ul>
+      </div>
+  
+      <button class="collapsible">Example 4: Finding the Force</button>
+      <div class="content">
+          <p>A coconut with a mass 4 kg is travelling at a uniform acceleration of \(10\:ms^{-2}\). What is the resulting force acting on it?</p>
+          <ul>
+              <li>\(F = ma\)</li>
+              <li>\(F = 4\,kg \times 10\,ms^{-2} = 40\,N\)</li>
+              <li><strong>Resulting Force </strong>= \(40\,N\)</li>
+          </ul>
+      </div>
+  
+      <button class="collapsible">Example 5: Apparent Weight of an Object Inside an Elevator </button>
+      <div class="content">
+          <p>A 40 kg object is in an elevator accelerating upward at \(2\,ms^{-2}\). What is the apparent weight of the object?</p>
+          <img src="image2.png" alt="Force diagram" style="max-width: 100%; border-radius: 8px; margin: 15px 0;" />
+          <ul>
+              <li>\(\uparrow \: Forces: F_N - mg = ma\)</li>
+              <li>\(F_N = Apparent \;Weight\) </li>
+              <li>\(F_N - mg = ma\)</li>
+              <li>\(F_N = m\,(g+a)\)</li>
+              <li>\(F_N= 40\,kg \times (9.8+2)ms^{-2} = 472\, N \)</li>
+              <li><strong>Apparent Weight</strong> = \(472\,N\)</li>
+          </ul>
+          
+      </div>
+      <h2>Friction</h2>
+      <p>Try rubbing your hands. Feel the warmth? That's friction. Now add some water or oil — less heat. Why? Because lubricants reduce friction. This is the same concept that keeps cars from overheating and your joints from creaking like a haunted house.</p>
+  
+      <p><strong>Friction</strong> acts parallel to the surfaces in contact and opposes motion.</p>
+      <ul>
+        <li><strong>Static Friction:</strong> \( F_s \le \mu_s N \) (prevents motion)</li>
+        <li><strong>Kinetic Friction:</strong> \( F_k = \mu_k N \) (during motion)</li>
+        <li><strong>Rolling Friction:</strong> Occurs with wheels or rolling objects</li>
+      </ul>
+      <p>Where \(\mu_k\), \( \mu_s\) and N represent static friction coefficient, kinetic friction coeffiecient and normal force respectively</p>
+  
+      <button class="collapsible">Example 6: Friction on a Horizontal Surface</button>
+      <div class="content">
+          <p>A 5 kg block rests on a horizontal surface with a coefficient of static friction, \(\mu_s = 0.4\) and a coefficient of kinetic friction, \(\mu_k = 0.3\). What is the maximum force that can be applied without moving the block?</p>
+        <ul>
+          <li>Mass: 10 kg, \( \mu_s = 0.4 \)</li>
+          <li>Normal Force: \( N = mg = 10 \times 9.8 = 98\,\text{N} \)</li>
+          <li>Maximum Friction Force: \( F_k = \mu_s N = 0.4 \times 98 = 39.2\,\text{N} \)</li>
+          <li><strong>Maximum Force that can be applied:</strong> \( 39.2\:N\)</li>
+        </ul>
+      </div>
+  
+      <button class="collapsible">Example 7: Pulling a Crate</button>
+      <div class="content">
+          <p>A 20 kg crate is pulled with a force of \(100 N\) at an angle of \(30^{\circ}\) above the horizontal on a rough surface (\(\mu_k = 0.25\)). Find the acceleration of the crate. (Assume g = \(10\:ms^{-2}\))
+          </p>
+          <img src="image3.png" alt="Force diagram" style="max-width: 100%; border-radius: 8px; margin: 15px 0;" />
+          <ul>
+              <li>\(\uparrow Forces: R + 100 \sin 30^{\circ} - mg = 0 \) </li>
+              <li>\(R = mg - 100\sin 30^{\circ}\)</li>
+              <li>\(R = 20\,kg \times 10\,ms^{-2} - 100\sin 30^{\circ} = 150\:N\)</li>
+              <li>\(Friction = \mu_kR = 0.25 \times 150\,N = 37.5\:N\)</li>
+              <li>\(Resultant\; Force =\: 100 \cos 30^{\circ} - 37.5\,N \approx 49.10\:N\)</li>
+              <li>\(a = \frac{F}{m} = \frac{49.10\,N}{20\,kg} = 2.46 \:ms^{-2}\)</li>
+              <li><strong>Acceleration</strong> = \(2.46 \:ms^{-2}\)</li>
+          </ul>
+          </div>
+      
+      <button class="collapsible">Example 8: Hanging Masses</button>
+      <div class="content">
+          <p>A 5 kg block is connected to a hanging 3 kg mass over a frictionless pulley. The coefficient of kinetic friction between the block and the table is 0.2. Find the acceleration of the system.</p>
+          <img src="image4.png" alt="Force diagram" style="max-width: 100%; border-radius: 8px; margin: 15px 0;" />
+          <ul>
+              <li>\(M = 3\,kg, m = 5\, kg, \mu = 0.2\)</li>
+              <li>\(\mu R = 0.2 \times mg = 0.2 \times 5\,kg \times 9.8\,ms^{-2} = 9.8\,N\)</li>
+              <li>\(Mg = 3\,kg \times 9.8\,ms^{-2} = 29.4\, N\)</li>
+              <li>Applying Newton’s laws to the 3 kg block,</li>
+              <li>\(Mg - T = Ma\)</li>
+              <li>\(29.4\,N - T = 3a\) : Equation 1</li>
+              <li>\Applying Newton’s laws to the 5kg block,</li>
+              <li>\(T - \mu R = ma\)</li>
+              <li>\(T - 9.8\,N = 5a\) : Equation 2</li>
+              <li>Equation 1 + Equation 2 = \(29.4\,N - 9.8\,N = 8a\)</li>
+              <li>\(2.45\:ms^{-2}\)</li>
+          </ul>
+      </div>
+      <br>
+      <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>
+    </div>
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+  <script src="../../../collapsibles.js"></script>
+</body>
+</html>

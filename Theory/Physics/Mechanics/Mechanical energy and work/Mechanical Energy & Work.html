@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mechanical Energy and Work</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <link rel="stylesheet" href="../../theoryPages.css">
+<script src="/navigationimport.js" defer></script>
+ 
+</head>
+<body>
+
+ 
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Mechanical Energy and Work</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h3>Introduction to Work</h3>
+<p>In physics, <strong>work</strong> is done when a force causes displacement. It is a measure of energy transfer that occurs when an object is moved by a force.</p>
+
+<p>Work is only done when the object actually moves in the direction of the applied force. If there is no movement, or if the force is perpendicular to the motion, no work is done.</p>
+
+<p>The general formula for work using vectors is:</p>
+<p>\[ W = \vec{F} \cdot \vec{d} = Fd \cos \theta \]</p>
+
+<ul>
+  <li>\( \vec{F} \) = applied force vector</li>
+  <li>\( \vec{d} \) = displacement vector</li>
+  <li>\( \theta \) = angle between force and displacement</li>
+</ul>
+
+<p>This formula is known as the <strong>dot product</strong> (scalar product), which calculates how much of the force acts in the direction of motion.</p>
+    <h2>Key Conditions for Work to Be Done</h2>
+    <ol>
+      <li>A force must be applied.</li>
+      <li>The object must move.</li>
+      <li>The force must have a component along the direction of motion (if \( \theta = 90^\circ \), no work is done).</li>
+    </ol>
+
+    <h2>Types of Work</h2>
+    <ul>
+      <li><strong>Positive Work (W > 0):</strong> When the force and displacement are in the same direction (e.g., lifting an object).</li>
+      <li><strong>Negative Work (W < 0):</strong> When the force opposes the displacement (e.g., friction slowing down an object).</li>
+      <li><strong>Zero Work (W = 0):</strong> When there is no movement or force is perpendicular to displacement.</li>
+    </ul>
+
+    <p>Energy is the ability to do work. It is a fundamental quantity in physics that can exist in various forms and can be transferred or transformed but not created or destroyed (according to the law of conservation of energy).</p>
+    <p>You are already familiar with Energy, Conservation of Energy, Forms of Energy and Sources of Energy from the previous chapters.</p>
+
+    <h2>Types of Mechanical Energy</h2>
+    <ul>
+      <li><strong>Kinetic Energy (KE):</strong> \( KE = \frac{1}{2}mv^2 \)</li>
+      <li><strong>Potential Energy (PE):</strong>
+        <ul>
+          <li>Gravitational PE: \( PE = mgh \)</li>
+          <li>Elastic PE: \( PE = \frac{1}{2}kx^2 \)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Relationship Between Work Done and Energy</h2>
+    <p>The relationship between them is described by the work-energy theorem, which states:</p>
+    <p>\( \text{Work done on an object} = \text{Change in its energy} \)</p>
+    <p>\( W = \Delta E \)</p>
+
+    <button class="collapsible">Example 1</button>
+    <div class="content">
+      <p>A person pushes a 10 kg box with a force of 20 N over a distance of 5 m on a frictionless surface. How much work is done by the person?</p>
+      <p>\( W = Fd \cos \theta = 20 \times 5 \times \cos 0 = 100 \, \text{J} \)</p>
+    </div>
+
+    <button class="collapsible">Example 2</button>
+    <div class="content">
+      <p>A ball of mass 2 kg is thrown vertically upward with an initial velocity of 15 m/s. How high will it rise before stopping?</p>
+      <p>Using conservation of energy:</p>
+      <p>\( KE_i = GPE_f \)</p>
+      <p>\( \frac{1}{2}mv^2 = mgh \Rightarrow \frac{1}{2}(2)(15^2) = 2 \cdot 9.8 \cdot h \)</p>
+      <p>\( h = 11.48 \, \text{m} \)</p>
+    </div>
+
+    <button class="collapsible">Example 3</button>
+    <div class="content">
+      <p>A 50 kg cyclist is moving at 10 m/s. If the cyclist stops by applying brakes that exert a constant friction force of 200 N, what is the stopping distance?</p>
+      <p>\( \Delta KE = \text{Work Done} = Fd \Rightarrow \frac{1}{2}mv^2 = Fd \)</p>
+      <p>\( \frac{1}{2} \cdot 50 \cdot 10^2 = 200d \Rightarrow d = 12.5 \, \text{m} \)</p>
+    </div>
+
+    <button class="collapsible">Example 4</button>
+    <div class="content">
+      <p>A pendulum is released from rest at a height of 2 m. What will be its speed at the lowest point?</p>
+      <p>\( GPE = KE \Rightarrow mgh = \frac{1}{2}mv^2 \Rightarrow v = \sqrt{2gh} = \sqrt{2 \cdot 9.8 \cdot 2} = 6.26 \, \text{m/s} \)</p>
+    </div>
+
+    <br>
+     <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>   
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+  <script src="../../../collapsibles.js"></script>
+</body>
+</html>

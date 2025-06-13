@@ -1,0 +1,111 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #0f0528, #1e0d65);
+  color: #f0e9d6;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+
+
+/* Grid Layout with Larger Boxes */
+.grid {
+  flex: 1 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  height: 350px;
+}
+
+.section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.4);
+}
+
+/* Overlay Styling */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.section:hover .overlay {
+  background: rgba(0,0,0,0.45);
+}
+
+.overlay span {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease;
+}
+
+.section:hover .overlay span {
+  transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(90deg, #1f1359, #23197a);
+  color: #d0d0ff;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    height: 260px;
+    
+
+  }
+  .overlay {
+    background: rgba(0,0,0,0.5);
+  }
+
+  
+}

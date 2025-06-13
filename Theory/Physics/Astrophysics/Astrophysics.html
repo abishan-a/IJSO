@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Astrophysics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../sectionPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>Astrophysics</h1>
+    <p>Explore stars, galaxies, and cosmology. Learn about celestial bodies, their motions, and the fundamental laws that govern the universe on the largest scales.</p>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h2>Astrophysics</h2>
+    <a class="back-btn" href="../physics.html">← Back to Physics</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+
+    <!-- Structure of the Universe -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Structure of the Universe <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Explore the large-scale structure of the universe, from stars to galaxies and planetary systems.</p> 
+        <br>
+        <a class="learn-btn" href="Structure of the Universe/Structure of the Universe.html">Learn More →</a>
+      </div>
+    </div>
+
+    <!-- Solar System -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Solar System <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Study the Sun, planets, moons, and smaller objects that make up our solar system.</p>
+        <br>
+        <a class="learn-btn" href="Solar System/Solar System.html">Learn More →</a>
+      </div>
+    </div>
+
+    <!-- Celestial Mechanics -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">
+        Celestial Mechanics <span class="arrow">→</span>
+      </div>
+      <div class="card-content">
+        <p>Learn the physics behind planetary motion, orbits, and gravitational forces in space.</p>
+        <br>
+        <a class="learn-btn" href="Celestial Mechanics/Celestial Mechanics.html">Learn More →</a>
+      </div>
+    </div>
+
+    <!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">🎯</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style astrophysics practice questions?</h4>
+    <p>Apply your knowledge with our collection of IJSO-style astrophysics problems.</p>
+    <a href="../../../Practice Questions/Physics/Astrophysics/Astrophysics.html">View Astrophysics Practice Questions</a>
+  </div>
+</div>
+
+<!-- Practice Section (NOT collapsible) -->
+<div class="practice-section">
+  <div class="practice-section-icon">📝</div>
+  <div class="practice-section-content">
+    <h4>Ready to take IJSO-style astrophysics mock tests?</h4>
+    <p>Challenge yourself with our collection of IJSO-style mock tests in astrophysics, designed to test your problem-solving skills and understanding.</p>
+    <a href="../../../Mock Tests/Physics/Astrophysics/Astrophysics.html">View Astrophysics Mock Tests</a>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleCard(card) {
+      const content = card.querySelector('.card-content');
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(c => {
+        if (c !== card) c.querySelector('.card-content').style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Genetic Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../general.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>The Genetic Code</h2>
+    <a href="../Molecular.html" class="back-btn">← Back to Molecular Biology</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+<h2>Basics of the Genetic Code</h2>
+<ul>
+    <li>The genetic code is the set of rules by which mRNA sequences are translated into proteins.</li>
+    <li>mRNA is made of four bases: Adenine (A), Uracil (U), Cytosine (C), and Guanine (G).</li>
+    <li>These bases are read three at a time in units called codons.</li>
+</ul>
+
+<h2>Codons</h2>
+<ul>
+    <li>A codon is a sequence of three mRNA bases that corresponds to one amino acid or a signal.</li>
+    <li>There are 64 codons (4³ combinations).</li>
+    <li>Some amino acids have more than one codon (redundancy).</li>
+</ul>
+
+<h2>Start and Stop Codons</h2>
+<ul>
+    <li>The Start codon is AUG – it codes for Methionine (Met) and signals the start of translation.</li>
+    <li>Stop codons do not code for any amino acid. They signal the end of translation:
+        <ul>
+            <li>UAA</li>
+            <li>UAG</li>
+            <li>UGA</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Reading Frame and Codon Identification</h2>
+<p>To read an mRNA sequence:</p>
+<ol type="1">
+    <li>Start scanning from the 5’ end until you find the first AUG.</li>
+    <li>Then read every 3 bases after that as a codon.</li>
+    <li>Continue until a stop codon is encountered.</li>
+    <li>Translation only happens in one reading frame.</li>
+</ol>
+
+<h2>How to Translate a Random Sequence</h2>
+<p>If given a sequence (e.g., bases 671 to 700), follow these steps:</p>
+
+<h3>Step 1: Count how many total bases</h3>
+<ul>
+    <li>Example: 700 – 671 + 1 = 30 bases</li>
+</ul>
+
+<h3>Step 2: Find if the sequence starts in the middle of a codon</h3>
+<ul>
+    <li>Divide the starting base number (e.g., 671) by 3</li>
+    <li>Do 671 ÷ 3 = 223 remainder 2</li>
+</ul>
+<p>🔹 Remainder 0 → starts at beginning of a codon.</p>
+<p>🔹 Remainder 1 → skip 2 bases (start from base 673)</p>
+<p>🔹 Remainder 2 → skip 1 base (start from base 672)</p>
+
+<h3>Step 3: After adjusting, divide the remaining sequence into groups of 3 (codons)</h3>
+
+<h2>🔬 Example</h2>
+<p>Given: Bases 671 to 700:</p>
+<p style="color :green;"> C U C G A G U U G C A U A A C C G U G A A G U G C A G A G U U</p>
+<h3>Step 1: 30 bases</h3>
+<h3>Step 2: 671 ÷ 3 = remainder 2 → skip 1 base (start from base 672)</h3>
+<p style="color :green;">U C G A G U U G C A U A A C C G U G A A G U G C A G A G U U</p>
+
+<h3>Step 3: Divide into codons:</h3>
+<ul>
+    <li>UCG → Ser</li>
+    <li>AGU → Ser</li>
+    <li>UGC → Cys</li>
+    <li>AUA → Ile</li>
+    <li>ACC → Thr</li>
+    <li>GUG → Val</li>
+    <li>AAG → Lys</li>
+    <li>UGC → Cys</li>
+    <li>AGA → Arg</li>
+    <li>GUU →Valine</li>
+</ul>
+
+<h3>✅ Amino acids:</h3>
+<p> Ser - Ser - Cys - Ile - Thr - Val - Lys - Cys - Arg - Val</p>
+<br>
+    <p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+      Written by <strong>Kasiban Parthipan</strong>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+
+</body>
+</html>

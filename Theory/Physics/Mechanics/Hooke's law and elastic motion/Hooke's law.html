@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hooke's Law and Elastic Motion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <link rel="stylesheet" href="../../theoryPages.css">
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Page header -->
+  <div class="page-header">
+    <h2>Hooke's Law and Elastic Motion</h2>
+    <a href="../Mechanics.html" class="back-btn">← Back to Mechanics</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+
+    <h2>Hooke’s law</h2>
+    <p>Hooke’s Law states that the force exerted by a spring is directly proportional to its extension or compression, as long as the deformation is within the elastic limit.</p>
+    <p>Mathematically, it is denoted as:</p>
+    <p>\[ F = -kx \]</p>
+    <ul>
+      <li>\( F \): Restoring force (N)</li>
+      <li>\( k \): Spring constant (N/m)</li>
+      <li>\( x \): Displacement from the equilibrium position (m)</li>
+      <li>The negative sign indicates that the force opposes the displacement.</li>
+    </ul>
+
+    <h2>Elastic and Plastic Deformation</h2>
+    <ul>
+      <li>Elastic deformation: The object returns to its original shape after the force is removed (follows Hooke’s Law).</li>
+      <li>Plastic deformation: The object does not return to its original shape after deformation (exceeds elastic limit).</li>
+    </ul>
+    <img src="image1.png" alt="Image1"/>
+
+    <h2>Energy in a Stretched Spring</h2>
+    <p>The work done to stretch or compress a spring is stored as elastic potential energy:</p>
+    <p>\[ U = \frac{1}{2}kx^2 \]</p>
+    <p>Where \( U \) is the elastic potential energy (J).</p>
+    <p><strong>Key Insight:</strong> The energy stored in the spring depends on \( x^2 \), meaning a small increase in \( x \) results in a larger energy increase.</p>
+
+    <h2>Young’s Modulus</h2>
+<p>Young’s modulus is a measure of the stiffness of a material. It describes how much a material stretches or compresses under a given stress.</p>
+
+<p><strong>Definition:</strong> Young’s modulus \(Y\) is defined as the ratio of stress to strain:</p>
+
+<p>\[
+Y = \frac{\text{Stress}}{\text{Strain}} = \frac{F/A}{\Delta L / L} = \frac{F L}{A \Delta L}
+\]</p>
+
+<ul>
+  <li>\(F\) = Applied force (N)</li>
+  <li>\(A\) = Cross-sectional area (m²)</li>
+  <li>\(L\) = Original length (m)</li>
+  <li>\(\Delta L\) = Extension (m)</li>
+</ul>
+
+<p>Units: Since stress is measured in Pascals (Pa) and strain is dimensionless, Young’s modulus also has units of Pascals (Pa).</p>
+
+<p>High Young’s modulus: The material is stiff (e.g., steel)</p>
+<p>Low Young’s modulus: The material is more flexible (e.g., rubber)</p>
+
+<ul>
+  <li>Only applies in the linear (elastic) region of a stress-strain graph.</li>
+  <li>Beyond the elastic limit, Hooke’s law and Young’s modulus no longer apply.</li>
+  <li>Useful for comparing mechanical properties of different materials.</li>
+</ul>
+
+    <h2>Applications of Hooke’s Law</h2>
+    <ul>
+      <li>Spring Scales (Weighing machines)</li>
+      <li>Shock Absorbers in cars (control motion)</li>
+      <li>Bungee Jumping (Elastic motion)</li>
+      <li>Atomic Vibrations (Atoms in a molecule vibrate like tiny springs)</li>
+    </ul>
+
+    <button class="collapsible">Example 1</button>
+    <div class="content">
+      <p>A spring with a constant of 50 N/m is stretched by 0.2 m. Find the restoring force exerted by the spring.</p>
+      <p>\[ F = kx = 50 \, \text{N/m} \times 0.2 \, \text{m} = 10 \, \text{N} \]</p>
+    </div>
+
+    <button class="collapsible">Example 2</button>
+    <div class="content">
+      <p>A force of 15 N stretches a spring by 0.3 m. Determine the spring constant.</p>
+      <p>\[ F = kx \Rightarrow k = \frac{F}{x} = \frac{15}{0.3} = 50 \, \text{N/m} \]</p>
+    </div>
+
+    <button class="collapsible">Example 3</button>
+    <div class="content">
+      <p>A block of 5 kg is dropped onto a vertical spring with a stiffness of 200 N/m. If the block compresses the spring by 10 cm, determine the velocity of the block just before impact.</p>
+      <p>According to Energy conservation:</p>
+      <p>\[ \frac{1}{2}kx^2 = \frac{1}{2}mv^2 \Rightarrow v = \sqrt{\frac{kx^2}{m}} = \sqrt{\frac{200 \cdot 0.1^2}{5}} = 0.632 \, \text{m/s} \]</p>
+    </div>
+
+    <h2> Did you know?</h2>
+    <p> When two identical springs (each of spring constant \( k \)) are connected in:</p>
+    <ul>
+      <li><strong>(a) Series:</strong> Their effective spring constant, \( \frac{1}{k_{\text{eff}}} = \frac{1}{k} + \frac{1}{k} = \frac{2}{k} \Rightarrow k_{\text{eff}} = \frac{k}{2} \)</li>
+      <li><strong>(b) Parallel:</strong> Their effective spring constant, \( k_{\text{eff}} = k + k = 2k \)</li>
+    </ul>
+
+    <br>
+<p style="text-align: right; font-size: 0.9em; color: #9081dd;">
+    Written by <strong>Thenura Dilruk</strong>
+</p>  
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 A Guide to the IJSO. All rights reserved.
+  </div>
+<script src="../../../collapsibles.js"></script>
+</body>
+</html>

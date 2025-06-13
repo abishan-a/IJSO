@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join the Community | IJSO Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="./sign-in.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
+  <script src="/navigationimport.js" defer></script>
+</head>
+<body>
+  
+
+  <div class="container">
+    <h2>Sign in</h2>
+    <form id="signupForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <button id="signinButton">Sign in</button>
+        <p>Don't have an account? Sign up <a href="./index.html">here</a></p>
+
+    </form>
+    
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector("nav ul");
+      menu.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
