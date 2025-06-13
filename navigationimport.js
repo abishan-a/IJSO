@@ -1,4 +1,4 @@
-fetch('navbar.html')
+fetch('navigation.html')
 
 let menuToggle = document.getElementById('menuToggle')
     menuToggle.addEventListener('click', ()=>{
